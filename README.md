@@ -16,4 +16,18 @@ caso queira criar um ambiente virtual, siga os passoas:
  ### Se tiver no Linux ou mac: 
  <source venv\bin\activate>
 
+ ### Instale as dependências do arquivo requirements.txt: 
+ <pip install -r requirements.txt>
+
+ ### Faça a migração para construir o banco de dados se for relacional, como o nosso caso: 
+ <python manage.py migrate>
+
+ ### Se der tudo certo na migração, o processo está concluído, basta executar o comando: 
+ <python manage.py runserver>
+
+ ### Para atualizar(caso queira) o arquivo requirements.txt:
+ <pip freeze > requirements.txt>
+
+
+
 
